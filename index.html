@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendário Escolar Simples</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Calendário Escolar</h1>
+
+    <form id="formEvento">
+      <div>
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+      </div>
+      <div>
+        <label for="responsavel">Responsável:</label>
+        <input type="text" id="responsavel" required>
+      </div>
+      <div>
+        <label for="tarefa">Tarefa:</label>
+        <input type="text" id="tarefa" required>
+      </div>
+      <div>
+        <label for="recursos">Recursos:</label>
+        <input type="text" id="recursos">
+      </div>
+      <button type="submit">Adicionar Evento</button>
+    </form>
+
+    <h2>Eventos</h2>
+    <ul id="listaEventos"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
